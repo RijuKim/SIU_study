@@ -25,7 +25,7 @@ var phoneNumber = "010-1111-1111"
 코딩 컨벤션
 https://kotlinlang.org/docs/coding-conventions.html#interface-implementation-layout
 
-두 개의 단어를 합쳐서 네이밀을 할 때
+두 개의 단어를 합쳐서 네이밍을 할 때
     카멜케이스 스타일
     -낙타
     -대소문자를 반복
