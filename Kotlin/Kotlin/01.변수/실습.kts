@@ -10,5 +10,5 @@ val CHAGE_NO = 100
 println(CHAGE_NO)
 //CHAGE_NO=200 //val cannot be ressigned
 
-val SHCOOL_NAME = "대한민국 학교"
-println(SCHOOL_NAME)
+//val SHCOOL_NAME = "대한민국 학교"
+//println(SCHOOL_NAME)
