@@ -1,0 +1,17 @@
+콜렉션(Collection)
+
+*변경가능 여부
+    -Mutable -> 변경가능
+    -Immutable -> 불변
+*특징으로 분리
+    -List
+        -Mutable, Immutable
+    -Set
+        -Mutable, Immutable
+    -Map
+        -Mutable, Immutable
+
+*List
+    -immutable
+        -형태
+            -ListOf<자료형>(값1, 값2, 값3)
