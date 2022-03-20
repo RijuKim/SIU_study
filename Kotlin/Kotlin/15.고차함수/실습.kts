@@ -1,0 +1,26 @@
+fun addTwoNumbers(number1: Int, number2: Int): Int {
+    return number1 + number2
+}
+
+//고차함수
+fun addTenNine(function: (Int, Int) -> Int) {
+    val result: Int = function(10, 9)
+    println("결과는 $result 입니다")
+}
+
+addTenNine(::addTwoNumbers)
+
+//람다
+//풀버전(생략 없는 버전)
+val addTenNine2: (Int, Int) -> Int = { number1: Int, number2: Int ->
+    val result = number1 + number2
+    result
+}
+addTenNine(addTenNine2) //람다함수를 인자로 사용하는 경우에는 ::를 사용할 필요가 없다
+//생략버전 1
+val addTenNine3: (Int, Int) -> Int = { number1, number2 ->
+    number1 + number2
+}
+addTenNine(addTenNine3)
+
+//생략버전 2
