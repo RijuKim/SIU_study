@@ -1,4 +1,9 @@
 콜렉션(Collection)
+팁, mutable, Immutable
+-기본적으로 불변한 immutable을 사용하는 것이 좋다
+-리스트->(10, 20, 30)
+-코드 500줄
+-리스트
 
 *변경가능 여부
     -Mutable -> 변경가능
@@ -11,7 +16,33 @@
     -Map
         -Mutable, Immutable
 
+-콜렉션은 전부 크기가 고정되어 있지 않다
+
 *List
     -immutable
         -형태
             -ListOf<자료형>(값1, 값2, 값3)
+            val numbers=listOf<Int>(1,2,3)
+    -mutable
+        -형태
+            -mutableListOf<자료형>(값1, 값2, 값3)
+            -val numbers=mutableListOf<int>(1, 2, 3)
+
+*Set
+    -집합-> 똑같은 값을 허락하지 않는다
+    -immutable
+        -형태
+            -setOf<자료형>(값1, 값2, 값3, 값1, 값1) )>setOf<자료형> (값1, 값2, 값3)
+    -mutable
+        -형태
+            -mutableSetOf<자료형>(값1, 값2, 값3, 값1, 값1)
+
+*map
+    -(key-value) ->저 방
+    -immutable
+        -형태
+            -mapOf<자료형, 자료형>(key1 to value1, key2 to value2)
+            -var numbers = mapOf<String, String>("1" to "일", "2" to "이")
+    -mutable
+        -형태
+            -immutableMapOf<자료형, 자료형>(key1 to value1, key2 to value2)
