@@ -24,3 +24,20 @@ val addTenNine3: (Int, Int) -> Int = { number1, number2 ->
 addTenNine(addTenNine3)
 
 //생략버전 2
+val addTenNine4 = { number1: Int, number2: Int ->
+    number1 + number2
+}
+addTenNine(addTenNine4)
+
+//너무 간단한 경우
+addTenNine { number1, number2 -> number1 + number2 }
+
+//파라미터가 없는 람다 함수
+val addTenNine5: () -> Int = {
+    10 + 9
+}
+
+//파라미터가 한 개인 경우에는 It을 사용한다
+val addTenNine: (Int) -> Int = {
+    10 + 9
+}
